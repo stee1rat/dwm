@@ -8,19 +8,17 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "monospace:size=10" };
 static const char dmenufont[]       = "monospace:size=10";
-static const char col_gray1[]       = "#333333";
+static const char col_gray1[]       = "#1b1b1b";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#1B1B1B";
+static const char col_gray5[]       = "#616161";
+static const char col_cyan[]        = "#333333";
 
 static const char *colors[][3]      = {
-	/*               fg         bg         border   */
-//	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-//	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
-
-	[SchemeNorm] = { col_gray4, col_cyan,  col_cyan  },
-	[SchemeSel]  = { col_gray3, col_gray1, col_gray2 },
+	/*                fg         bg         border   */
+	[SchemeSel]   = { col_gray3, col_cyan,  col_gray2 },
+	[SchemeNorm]  = { col_gray4, col_gray1, col_gray1},
 };
 
 /* tagging */
@@ -35,6 +33,7 @@ static const Rule rules[] = {
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
 	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
 	{ "Steam",    NULL,       NULL,       1 << 1,       0,           -1 },
+	{ "discord",  NULL,       NULL,       1 << 8,       0,           -1 },
 };
 
 /* layout(s) */
