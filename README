@@ -7,6 +7,10 @@ Requirements
 ------------
 In order to build dwm you need the Xlib header files.
 
+Debian dependencies
+-------------------
+sudo apt install make gcc libx11-dev libxft-dev libxinerama-dev xorg
+
 
 Installation
 ------------
